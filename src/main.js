@@ -11,7 +11,9 @@ function updateCountdown() {
   let countdownElement = document.querySelector("#time");
   let daysUntilElement = document.querySelector("#days");
 
-  daysUntilElement.innerHTML = `${Math.floor(interval.length("days"))} days`;
+  daysUntilElement.innerHTML = `<strong>${Math.floor(
+    interval.length("days")
+  )} days</strong>`;
   countdownElement.innerHTML = `<strong>${
     duration.toObject().hours
   }</strong> <small>hours,</small> <strong>${
